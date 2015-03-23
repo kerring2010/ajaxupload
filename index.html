@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>upload by kerring</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <script type="text/javascript" src="jquery.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="ajaxfileupload.js" charset="UTF-8"></script>
+    <style type="text/css">
+    .upload_box{
+    	position: relative;
+    }
+    .file_input{
+    	width: 100px;line-height: 30px;
+    	position: absolute;top: 107px;left: 0px;z-index: 10;
+    	filter:alpha(opacity=0);
+		-moz-opacity:0;
+		-khtml-opacity: 0;
+		opacity: 0;
+    	cursor: pointer;
+    }
+    .btn{
+    	width: 98px;line-height: 30px;text-align: center;
+    	position: absolute;top: 107px;left: 0px;background: #E9C341;border:1px solid #BB9516;
+    	z-index: 9;
+    }
+    </style>
+</head>
+<body>
+
+<div class="upload_box">
+    <p><img class="upfile_img" src="/img/upload_pic.png" /></p>
+    <input class="file_input" name="order_img" onchange="return ajaxFileUpload(this,'upload.php');" type="file">
+    <div class="btn"><input name="pic_url" type="hidden" />上传图片</div>
+</div>
+
+</body>
+</html>
