@@ -24,10 +24,10 @@ class Upload {
             'file_secret' => 'a1d33d0dfe',
             'isFigureBed' => true,
             'figureBed'   => array(
-                'domain'  => 'http://s.zdmimg.com',
-                'space'   => 'zdmshow',
-                'user'    => 'moludemei',
-                'password'=> 'p3z~Gldq'
+                'domain'  => '',
+                'space'   => '',
+                'user'    => '',
+                'password'=> ''
             ),
             'maxSize' => '4096000',
             'savePath' => '/demo/',
